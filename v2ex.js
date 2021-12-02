@@ -1,6 +1,5 @@
 //V2ex-Auto-Sign
 const $ = new Env('V2ex自动签到');
-const notify = $.isNode() ? require('../sendNotify') : '';
 const cookie = process.env.V2EXCK
 const SEND_KEY = process.env.SEND_KEY
 const axios = require("axios")
@@ -32,7 +31,6 @@ function check() {
                 ckstatus = 0;
                 notice += "cookie失效";
                 if(SEND_KEY){
-                    notify.sendNotify("V2ex自动签到", notice);
                     return;
                 }
             } else {
@@ -66,7 +64,6 @@ function daily() {
             } else {
                 notice += "签到失败Cookie疑似失效\n";
                 if(SEND_KEY){
-                    notify.sendNotify("V2ex自动签到", notice);
                     return;
                 }
             }
@@ -110,7 +107,6 @@ function sign() {
                 }
             }
             console.log(notice);
-            notify.sendNotify("V2ex自动签到", notice);
         } catch (err) {
             console.log(err);
         }
