@@ -18,8 +18,8 @@
   },
   "homepage": "https://github.com/hccluck/public_actions#readme",
   "dependencies": {
-    "node-fetch": "^2.6.1",
-    "nodemailer": "^6.6.3",
-    "axios": "^0.21.1"
+    "node-fetch": "2.6.1",
+    "nodemailer": "6.6.3",
+    "axios": "0.21.1"
   }
 }
