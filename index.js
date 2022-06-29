@@ -67,9 +67,9 @@ const { autoGame } = require('./src/games/autoRun');
 
     // console.log(html);
 
-    await sendMail({ from: '掘金', subject: '定时任务', html });
+//     await sendMail({ from: '掘金', subject: '定时任务', html });
 
-    console.log('邮件发送完成');
+//     console.log('邮件发送完成');
   } catch (error) {
     console.error(error);
   }
@@ -84,9 +84,9 @@ const { autoGame } = require('./src/games/autoRun');
       游戏结果：${game_res}
     `;
 
-    await sendDingTalk(msg);
+//     await sendDingTalk(msg);
 
-    console.log('钉钉机器人通知完成');
+//     console.log('钉钉机器人通知完成');
   } catch (error) {
     console.error(error);
   }
