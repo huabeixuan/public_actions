@@ -10,6 +10,12 @@ const autoVisit = require('./src/autoVisit');
 const { autoGame } = require('./src/games/autoRun');
 
 (async () => {
+  try {
+    const msg = await autoVisit()
+    console.log(msg)
+  } catch (error) {
+    console.error(error)
+  }
   // 上次分数
   const yesterday_score = await getPoint();
 
@@ -101,11 +107,5 @@ const { autoGame } = require('./src/games/autoRun');
   } catch (error) {
     console.error(error)
   }
-  try {
-    const msg = await autoVisit()
 
-    console.log(msg)
-  } catch (error) {
-    console.error(error)
-  }
 })();
