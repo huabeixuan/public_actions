@@ -7,7 +7,7 @@ const sendWxWork = require('./src/sendWxWork')
 const getPoint = require('./src/getPoint');
 const autoVisit = require('./src/autoVisit');
 
-const { autoGame } = require('./src/games/autoRun');
+// const { autoGame } = require('./src/games/autoRun');
 
 (async () => {
   try {
@@ -42,7 +42,7 @@ const { autoGame } = require('./src/games/autoRun');
 
   let game_res = '挖矿成功！';
   try {
-    await autoGame();
+    // await autoGame();
   } catch (error) {
     game_res = '挖矿失败！';
   }
