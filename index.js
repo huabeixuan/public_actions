@@ -1,8 +1,8 @@
 const sign_in = require('./src/signIn');
 const draw = require('./src/draw');
 const dipLucky = require('./src/dipLucky');
-const sendMail = require('./src/sendMail');
-const sendDingTalk = require('./src/sendDingTalk');
+// const sendMail = require('./src/sendMail');
+// const sendDingTalk = require('./src/sendDingTalk');
 const sendWxWork = require('./src/sendWxWork')
 const getPoint = require('./src/getPoint');
 const autoVisit = require('./src/autoVisit');
